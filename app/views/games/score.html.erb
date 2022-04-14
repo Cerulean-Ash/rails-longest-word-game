@@ -1,3 +1,7 @@
 <h1>Result</h1>
 
+<p><%= sanitize @results %></p>
+<p>Your score is <%= cookies[:playerscore] %></p>
 <%= link_to 'Play again', new_path %>
+
+<!-- <p><%= @results.html_safe %></p>  alt method - sanitize is new preffered method-->

@@ -12,6 +12,7 @@
       <p>What is the longest word you can find?</p>
       <div class='textbox-with-button'>
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <%= hidden_field_tag :grid, @letters.join %>
         <input type="text" name="guess" class="text-input">
         <input type="submit" value="Play" class='submit-btn'>
       </div>
